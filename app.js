@@ -1,4 +1,6 @@
 function main(){
+    GPAX = +document.getElementById("GPAX").value;
+
     g1 = +document.getElementById("g1").value;
     g2 = +document.getElementById("g2").value;
     g3 = +document.getElementById("g3").value;
@@ -19,7 +21,9 @@ function main(){
     totalU = u1+u2+u3+u4+u5
     console.log(totalU)
 
-    result = (((g1 * u1) + (g2 * u2) + (g3 * u3) + (g4 * u4) + (g5 * u5)) / totalU);
+    x = ((g1 * u1) + (g2 * u2) + (g3 * u3) + (g4 * u4) + (g5 * u5))
+    result = ((GPAX*totalU)-x)/u5
+    // result = (((g1 * u1) + (g2 * u2) + (g3 * u3) + (g4 * u4) + (g5 * u5)) / totalU);
     console.log(result.toFixed(2))
     document.getElementById("result").innerHTML = result
 }
