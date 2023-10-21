@@ -18,9 +18,9 @@ function main(){
     u5 = +document.getElementById("u5").value;
     console.log("เกรดย่อย" +  u1,u2,u3,u4,u5)
 
-if (u5 == 0){
+if (g5 == 0){
     totalU = u1+u2+u3+u4
-}else if (u5 > 0){
+}else if (g5 > 0){
     totalU = u1+u2+u3+u4+u5
 }
     console.log(totalU)
