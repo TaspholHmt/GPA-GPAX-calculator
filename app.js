@@ -18,7 +18,11 @@ function main(){
     u5 = +document.getElementById("u5").value;
     console.log("เกรดย่อย" +  u1,u2,u3,u4,u5)
 
+if (u5 == 0){
+    totalU = u1+u2+u3+u4
+}else if (u5 > 0){
     totalU = u1+u2+u3+u4+u5
+}
     console.log(totalU)
 
     // x = ((g1 * u1) + (g2 * u2) + (g3 * u3) + (g4 * u4) + (g5 * u5))
