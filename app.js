@@ -21,10 +21,10 @@ function main(){
     totalU = u1+u2+u3+u4+u5
     console.log(totalU)
 
-    x = ((g1 * u1) + (g2 * u2) + (g3 * u3) + (g4 * u4) + (g5 * u5))
-    console.log(x)
-    result = ((GPAX*totalU)-x)/u5
-    // result = (((g1 * u1) + (g2 * u2) + (g3 * u3) + (g4 * u4) + (g5 * u5)) / totalU);
+    // x = ((g1 * u1) + (g2 * u2) + (g3 * u3) + (g4 * u4) + (g5 * u5))
+    // console.log(x)
+    // result = ((GPAX*totalU)-x)/u5
+    result = (((g1 * u1) + (g2 * u2) + (g3 * u3) + (g4 * u4) + (g5 * u5)) / totalU);
     console.log(result.toFixed(2))
     document.getElementById("result").innerHTML = result
 }
